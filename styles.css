@@ -4,32 +4,78 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centers content horizontally */
-  font-family: sans-serif;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Optional: Limit the width of your main content */
 main {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   padding: 20px;
   text-align: center;
 }
 
-/* Make the table look better and centered */
+/* Style the header */
+header {
+  padding: 20px 0;
+  background-color: #0074D9;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+/* Table styles */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 30px 0;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
+th,
 td {
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
 }
 
-/* Style the header */
-header h1 {
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Section headings */
+section h2 {
   margin-top: 40px;
+  font-size: 1.8rem;
+  color: #0074D9;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background-color: #eee;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
 }
